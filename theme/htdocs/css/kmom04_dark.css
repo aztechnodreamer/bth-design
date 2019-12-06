@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design kmom04 - dark theme.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /**
  * Import mixins.
@@ -5023,9 +5023,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: #ddd;
-  font: 16px/1.375 MyriadPro-Regular, "Myriad Pro Regular", MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+  color: #fff;
+  background-color: #282828;
+  font: 16px/1.375 Cambria, Georgia, Times, 'Times New Roman', serif;
 }
 img {
   max-width: 100%;
@@ -5656,3 +5656,29 @@ figcaption {
 /**
  * My own settings, not currently in their own module.
  */
+.inner-wrap {
+  background-color: #333;
+}
+.inner-wrap-flash {
+  background-color: #282828;
+}
+a {
+  color: #94a8b3;
+}
+a:hover {
+  color: #67757d;
+}
+a:visited,
+a:active {
+  color: #bababa;
+}
+code,
+.author-byline {
+  background-color: #686868;
+  border: 1px solid #bababa;
+}
+img {
+  -webkit-filter: grayscale(60%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(60%);
+}

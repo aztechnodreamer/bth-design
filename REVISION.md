@@ -1,6 +1,15 @@
 Revision history
 ======================
 
+v4.0.0 (2019-12-06)
+-------------------
+
+* Updated style for kmom03 and kmom04 (LESS).
+* Adding `theme/src/kmom04.less`, `theme/src/kmom04_colorful.less`, `theme/src/kmom04_dark.less`, `theme/src/kmom04_minimalistic.less`, `content/rapport/.meta.md`, `content/rapport/00_index.md`, `content/rapport/04_fargschema.md`.
+* Adding images: `DJT_full.jpg`, `DJT_small.jpg`, `SSAB_full.jpg`, `SSAB_small.jpg`, `Stockholmsk\303\244llan_full.jpg`, `Stockholmsk\303\244llan_small.jpg`.
+* Uppdating `revision.md`, `config/page.php`, `theme/src/layout/vgrid.less`, `content/redovisning/04_kmom04.md`.
+* Default stylesheet set to `css/kmom04.css`.
+
 v3.0.0 (2019-12-01)
 -------------------
 
@@ -8,7 +17,6 @@ v3.0.0 (2019-12-01)
 * Adding `theme/src/kmom02.less`, `theme/src/base/base_kmom03`, `theme/src/layout/vgrid.less`.
 * Uppdated texts in `revision.md`, `config/page.php`, `content/redovisning/03_kmom03.md`.
 * Default stylesheet set to `css/kmom03.css`.
-
 
 v2.0.0 (2019-11-30)
 -------------------

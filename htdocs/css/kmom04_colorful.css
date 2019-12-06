@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design kmom04 - colorful theme.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /**
  * Import mixins.
@@ -5018,13 +5018,13 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 html {
   overflow-y: scroll;
-  background-color: #333;
+  background-color: #caffab;
 }
 body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #ddd;
+  background-color: #fd91ff;
   font: 16px/1.375 MyriadPro-Regular, "Myriad Pro Regular", MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
 }
 img {
@@ -5656,3 +5656,33 @@ figcaption {
 /**
  * My own settings, not currently in their own module.
  */
+.inner-wrap,
+.outer-wrap-footer {
+  background-color: #caffab;
+  color: #333;
+}
+.inner-wrap-flash {
+  background-color: #fd91ff;
+}
+a {
+  color: #59b3a8;
+}
+a:hover {
+  color: #b150b3;
+}
+a:visited,
+a:active {
+  color: #80b362;
+}
+#rm-menu,
+code,
+.author-byline {
+  background-color: #99fff3;
+}
+code,
+.author-byline {
+  border: 1px solid #333;
+}
+.rm-submenu-button li {
+  background-color: #99fff3;
+}

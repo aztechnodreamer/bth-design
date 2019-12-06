@@ -5394,6 +5394,12 @@ hr::after {
 .site-logo {
   display: none;
 }
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
 /**
  * Header layout
  */
@@ -5542,6 +5548,21 @@ hr::after {
 .next-previous .next,
 .next-previous .previous {
   width: 50%;
+}
+figcaption {
+  font-style: italic;
+}
+/**
+ * Byline
+ */
+.author-byline {
+  display: inline;
+  float: left;
+  width: 65.625%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
 }
 /**
  * Footer layout
