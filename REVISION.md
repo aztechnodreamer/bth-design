@@ -1,6 +1,15 @@
 Revision history
 ======================
 
+v5.0.0 (2019-12-15)
+-------------------
+
+* Updated style for kmom05 (LESS).
+* Adding `content/blogg/.meta.md`, `content/blogg/100_mitt-forsta-inlagg.md`, `content/blogg/101_mitt-andra-inlagg.md`, `content/blogg/102_mitt-tredje-inlagg.md`, `content/blogg/block-about.md`, `content/blogg/index.md`, `content/rapport/05_laddningstid.md`, `content/rapport/Laddningstid_kmom05.pdf`.
+* Adding images: `arngren.jpg`, `axiell.jpg`, `grind.jpg`, `julbord.jpg`, `julstjarna.jpg`, `theSun.jpg`.
+* Uppdating `revision.md`, `config/page.php`, `config/navbar/header.php`, `config/navbar/plain.php`, `config/navbar/responsive.php`, `content/redovisning/05_kmom05.md`.
+* Default stylesheet set to `css/kmom05.css`.
+
 v4.0.0 (2019-12-06)
 -------------------
 

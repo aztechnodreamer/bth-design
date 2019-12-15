@@ -5394,12 +5394,6 @@ hr::after {
 .site-logo {
   display: none;
 }
-.right {
-  float: right;
-}
-.left {
-  float: left;
-}
 /**
  * Header layout
  */
@@ -5409,6 +5403,9 @@ hr::after {
 .inner-wrap-header {
   margin-right: auto;
   margin-left: auto;
+  max-width: 100%;
+}
+.inner-wrap-header .row {
   max-width: 100%;
 }
 .region-header-col-1,
@@ -5548,9 +5545,6 @@ hr::after {
 .next-previous .next,
 .next-previous .previous {
   width: 50%;
-}
-figcaption {
-  font-style: italic;
 }
 /**
  * Byline
