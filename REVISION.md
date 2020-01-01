@@ -1,6 +1,15 @@
 Revision history
 ======================
 
+v6.0.0 (2019-12-31)
+-------------------
+
+* Updated styles for kmom06 (LESS).
+* Adding `content/rapport/06_designprincip.md`, `content/rapport/07_designelement.md`, `content/rapport/08_designprinciper.md`.
+* Adding images: `Fenix.jpg`, `Martins.jpg`, `Sorti.jpg`, `hunting.jpg`, `whitewood.jpg`.
+* Uppdating `revision.md`, `config/page.php`, `config/navbar/header.php`, `config/navbar/responsive.php`, `content/.meta.md`, `content/verktyg/.meta.md`, `content/rapport/.meta.md`, `content/redovisning/.meta.md`, `content/redovisning/06_kmom06.md`.
+* Default stylesheet set to `css/kmom06-designprinciper.css`.
+
 v5.0.0 (2019-12-15)
 -------------------
 
@@ -13,7 +22,7 @@ v5.0.0 (2019-12-15)
 v4.0.0 (2019-12-06)
 -------------------
 
-* Updated style for kmom03 and kmom04 (LESS).
+* Updated styles for kmom03 and kmom04 (LESS).
 * Adding `theme/src/kmom04.less`, `theme/src/kmom04_colorful.less`, `theme/src/kmom04_dark.less`, `theme/src/kmom04_minimalistic.less`, `content/rapport/.meta.md`, `content/rapport/00_index.md`, `content/rapport/04_fargschema.md`.
 * Adding images: `DJT_full.jpg`, `DJT_small.jpg`, `SSAB_full.jpg`, `SSAB_small.jpg`, `Stockholmsk\303\244llan_full.jpg`, `Stockholmsk\303\244llan_small.jpg`.
 * Uppdating `revision.md`, `config/page.php`, `theme/src/layout/vgrid.less`, `content/redovisning/04_kmom04.md`.

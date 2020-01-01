@@ -1,0 +1,262 @@
+/*!
+ * Stylesheet for design kmom06 - Designelement.
+ *
+ * This stylesheet is for the design course and kmom05 where we use LESS.
+ */
+
+ /**
+  * Import fonts.
+  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap");
+
+
+
+/**
+ * Import mixins.
+ */
+@import "mixin/clearfix.less";
+
+.clearfix() {
+    #design-mixin.clearfix()
+}
+
+
+
+/**
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+//@import "module/kmom01.less";
+@import "module/stylechooser.less";  // Just an example module
+
+
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+//@import "@desinax/responsive-menu/less/media-queries.less";
+
+
+
+/**
+ * Import the typographic grid.
+ */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less//typography-defaults.less";
+
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+//@import "base/base.less";
+@import "base/base_kmom03.less";
+
+
+
+/**
+ * Import the vertical grid.
+ */
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/vgrid.less";
+
+// // Default grid, change to fit your requirements.
+// @columnWidth:   30;
+// @gutterWidth:   10;
+// @columns:       24;
+// @gridType:      "float"; // "flex"
+
+
+
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+//@import "layout/layout.less";
+//@import "layout/layout_kmom02.less";
+@import "layout/responsive.less";
+@import "layout/regions.less";     // To add style for ?regions
+
+
+
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+
+
+/**
+ * My own settings, not currently in their own module.
+ */
+@bgColorHtml: #fff;
+@bgColorBody: #fafafa;
+
+.inner-wrap-header {
+    border-bottom: 1px solid #333;
+    box-shadow: 0px 2px 10px #333;
+}
+
+.inner-wrap-header, .inner-wrap-main, .inner-wrap-footer {
+    background-color: #fff;
+    color: #333;
+}
+
+.inner-wrap-flash {background-color: transparent;}
+
+.inner-wrap-header > .row, .inner-wrap-flash > .row {margin-bottom: 0;}
+.region-flash {margin-top: 5.781px;}
+
+.outer-wrap-footer {
+    background-color: #fff;
+    border-top: 1px solid #333;
+    box-shadow: 0px -2px 10px #333;
+}
+
+.inner-wrap-main a,
+.inner-wrap-footer a {
+    color: #8d006b;
+}
+
+.inner-wrap-main a:hover,
+.inner-wrap-footer a:hover {
+    background-color: rgba(#8d006b, 0.3);
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.site-logo-text a {
+    color: #333;
+    text-decoration: none;
+}
+
+.site-logo-text {
+    text-shadow: -5px -5px 20px #8d006b;
+    font-size: 200%;
+    font-family: "VT323", monospace;
+}
+
+.my-navbar > li {
+    color: #333;
+    font-family: "VT323", monospace;
+}
+
+.my-navbar > li:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+.rm-max .rm-small .rm-button.rm-clicked {color: #fff;}
+
+.rm-default ul li:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+#rm-menu,
+#rm-menu li,
+#rm-menu li:hover {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+.region-breadcrumb {display: none;}
+code {background-color: rgba(#ccc, 0.3);}
+.next, .previous {background-color: rgba(#8d006b, 0.3);}
+.next-previous a:hover {background-color: transparent;}
+
+.next-previous,
+.next-previous a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.author-byline {
+    background-color: rgba(#8d006b, 0.3);
+    width: 50%;
+    padding: 10px;
+    box-shadow: -5px 5px 20px #333;
+}
+
+h1 {
+    background-image: url("../img/whitewood.jpg");
+    background-size: cover;
+    text-align: center;
+    border: 1px solid #f7f7f7;
+}
+
+h1::before {
+    content: "";
+    float: left;
+    height: 25px;
+    width: 25px;
+    background: conic-gradient(from 140deg, #fff, #000, #fff);
+    border-radius: 50%;
+    margin: 10px 2px;
+}
+
+h1::after {
+    content: "";
+    float: right;
+    height: 25px;
+    width: 25px;
+    background: conic-gradient(from -140deg, #fff, #000, #fff);
+    border-radius: 50%;
+    margin: 10px 2px;
+}
+
+.figure.right img {box-shadow: 5px 5px 20px #333;}
+.figure.left img {box-shadow: -5px 5px 20px #333;}
+.figure.center img, .inner-wrap-main, .region-flash img {box-shadow: 0px 0px 15px #333;}
+
+// Adapt the typographic grid to my style
+@fontFamilyHeadings: @fontFamilyHelvetica; //"serif";
+@fontFamilyBody:     @fontFamilyCalibri; //"sans-serif";
+@fontFamilyCode:     @fontFamilyCourier; //"monospace";
+
+// Magic number and base fontsize (typographic grid)
+@magicNumber:  22px;  // 22px
+@fontSizeBody: 16px;
