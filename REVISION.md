@@ -1,6 +1,12 @@
 Revision history
 ======================
 
+v10.0.0 (2020-01-05)
+-------------------
+
+* Adding images: `bjurholm.jpg`, `bjurholm_vapen.png`, `stockholm.jpg`, `stockholm_vapen.png`, `vara.jpg`, `vara_vapen.png`.
+* Uppdating `revision.md`, `config/navbar/header.php`, `config/navbar/responsive.php`, `content/redovisning/10_kmom10.md`.
+
 v6.0.0 (2019-12-31)
 -------------------
 
